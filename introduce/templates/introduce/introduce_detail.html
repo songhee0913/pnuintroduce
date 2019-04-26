@@ -1,0 +1,41 @@
+<html lang="kr">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>{{ introduce.name }} 자기소개 페이지</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>생년월일</h3>
+        <p>{{ introduce.birthday }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>주소</h3>
+        <p>{{ introduce.address }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>종교</h3>
+        <p>{{ introduce.religion }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>취미</h3>
+        <p>{{ introduce.hobby }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>좋아하는 것</h3> 
+        <p>{{ introduce.like_it }}</p>
+      </div>
+    </div>
+  </div>
